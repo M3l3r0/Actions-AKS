@@ -1,13 +1,3 @@
----
-page_type: sample
-languages:
-  - python
-products:
-  - azure
-  - azure-redis-cache
-description: "Demo for the LabX hackathon"
----
-
 # LabX App
 
 This sample creates a multi-container application in an Azure Kubernetes Service (AKS) cluster throug GitHub Actions. The application interface has been built using Python / Flask. The data component is using Redis. This code is packaged into container images, uploaded to Azure Container Registry, and then run in an AKS cluster.
