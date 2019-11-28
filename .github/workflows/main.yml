@@ -13,9 +13,9 @@ on: [push]
 
 # Environment variables available to all jobs and steps in this workflow
 env:
-  REGISTRY_NAME: my-registry-name
-  CLUSTER_NAME: my-cluster-name
-  CLUSTER_RESOURCE_GROUP: my-cluster-resource-group
+  REGISTRY_NAME: labxacr
+  CLUSTER_NAME: labxaks
+  CLUSTER_RESOURCE_GROUP: labx-rg
   NAMESPACE: default
   
 jobs:
