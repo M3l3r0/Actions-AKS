@@ -60,8 +60,7 @@ jobs:
     - uses: azure/k8s-deploy@v1
       with:
         manifests: |
-          manifests/deployment.yml
-          manifests/service.yml
+          manifests/azure-vote-all-in-one-redis.yml
         images: |
           ${{ env.REGISTRY_NAME }}.azurecr.io/myimage:${{ github.sha }}
         imagepullsecrets: |
