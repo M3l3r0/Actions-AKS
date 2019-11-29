@@ -40,4 +40,4 @@ az ad sp create-for-rbac --name <APPNAME> --role contributor --scopes /subscript
 AZURE_CREDENTIALS
 11) GitHub Actions gives you the flexibility to build an automated software development lifecycle workflow. The Kubernetes action azure/aks-set-context@v1 facilitate deployments to Azure Kubernetes Service clusters. The action sets the target AKS cluster context, which could be used by other actions like azure/k8s-deploy, azure/k8s-create-secret etc. or run any kubectl commands. Check: https://github.com/Azure/actions-workflow-samples/tree/master/Kubernetes
 
-In this example, the workflow is already created in .github/workflows/main.yml
+In this example, the workflow is already created in .github/workflows/main.yml. Check this file and change the values for the REGISTRY_NAME, CLUSTER_NAME, CLUSTER_RESOURCE_GROUP and NAMESPACE environment variables. 
