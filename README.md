@@ -36,6 +36,8 @@ az aks create \
 ```
 az ad sp create-for-rbac --name <APPNAME> --role contributor --scopes /subscriptions/<SUBSCRIPTION_ID>/resourceGroups/<RESOURCE_GROUP> --sdk-auth
 ```
+You can obtain the <SUBSCRIPTION_ID> by using > az account list
+
 10) Copy this JSON object, which you can use to authenticate from GitHub. Add it to the following secret variable:
 AZURE_CREDENTIALS
 11) GitHub Actions gives you the flexibility to build an automated software development lifecycle workflow. The Kubernetes action azure/aks-set-context@v1 facilitate deployments to Azure Kubernetes Service clusters. The action sets the target AKS cluster context, which could be used by other actions like azure/k8s-deploy, azure/k8s-create-secret etc. or run any kubectl commands. Check: https://github.com/Azure/actions-workflow-samples/tree/master/Kubernetes
