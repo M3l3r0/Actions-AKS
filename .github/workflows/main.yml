@@ -13,9 +13,9 @@ on: [push]
 
 # Environment variables available to all jobs and steps in this workflow
 env:
-  REGISTRY_NAME: acrdemostest
-  CLUSTER_NAME: akscluster
-  CLUSTER_RESOURCE_GROUP: testdemo
+  REGISTRY_NAME: acrwebinar01
+  CLUSTER_NAME: akswebinar01
+  CLUSTER_RESOURCE_GROUP: rgwebinar
   NAMESPACE: default
   
 jobs:
