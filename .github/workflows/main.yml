@@ -2,6 +2,7 @@
 #
 # To configure this workflow:
 #
+#
 # 1. Set up the following secrets in your workspace: 
 #     a. REGISTRY_USERNAME with ACR username
 #     b. REGISTRY_PASSWORD with ACR Password
