@@ -14,9 +14,9 @@ on: [push]
 
 # Environment variables available to all jobs and steps in this workflow
 env:
-  REGISTRY_NAME: iberdrolajuevesacr
-  CLUSTER_NAME: iberdrolajuevesaks
-  CLUSTER_RESOURCE_GROUP: iberdrolajueves
+  REGISTRY_NAME: registryname
+  CLUSTER_NAME: clustername
+  CLUSTER_RESOURCE_GROUP: clusterrg
   NAMESPACE: default
   
 jobs:
