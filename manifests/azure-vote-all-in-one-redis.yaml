@@ -4,6 +4,9 @@ metadata:
   name: azure-vote-back
 spec:
   replicas: 1
+  selector:
+    matchLabels:
+      app: azure-vote-back
   template:
     metadata:
       labels:
@@ -34,6 +37,9 @@ metadata:
   name: azure-vote-front
 spec:
   replicas: 1
+  selector:
+    matchLabels:
+      app: azure-vote-front
   strategy:
     rollingUpdate:
       maxSurge: 1
@@ -48,7 +54,7 @@ spec:
         "beta.kubernetes.io/os": linux
       containers:
       - name: azure-vote-front
-        image: actionsaksacr.azurecr.io/myimage:v1
+        image: microsoft/azure-vote-front:v1
         ports:
         - containerPort: 80
         resources:
