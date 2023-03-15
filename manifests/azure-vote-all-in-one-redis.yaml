@@ -42,9 +42,9 @@ spec:
       app: azure-vote-front
   strategy:
     rollingUpdate:
-      maxSurge: 1
-      maxUnavailable: 1
-  minReadySeconds: 5 
+      maxSurge: 10
+      maxUnavailable: 10
+  minReadySeconds: 10
   template:
     metadata:
       labels:
